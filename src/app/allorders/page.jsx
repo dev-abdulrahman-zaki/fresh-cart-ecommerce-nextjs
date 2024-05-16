@@ -9,8 +9,8 @@ export const metadata = {
 
 export default function page() {
   return (
-    <ProtectedRoute>
+    // <ProtectedRoute>
       <Orders />
-    </ProtectedRoute>
+    // </ProtectedRoute>
   );
 }

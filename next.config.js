@@ -1,6 +1,7 @@
 module.exports = {
   images: {
-    loader: 'custom',
+    // loader: 'custom',
+    // domains: ['ecommerce.routemisr.com'], // Add the domain here
     remotePatterns: [
       {
         protocol: "https",

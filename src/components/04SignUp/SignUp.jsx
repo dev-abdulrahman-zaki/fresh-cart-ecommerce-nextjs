@@ -94,7 +94,13 @@ export default function SignUp() {
 
         <div className="row justify-content-center align-items-center">
           <div className="col-12 col-md-6 col-lg-4 order-lg-1 order-2 text-center">
-            <Image src="/imgs/signup.svg" alt="" className="img-fluid" />
+            <Image
+              src="/imgs/signup.svg"
+              alt=""
+              className="img-fluid"
+              width={300}
+              height={300}
+            />
           </div>
 
           <div className="col-12 col-md-6 offset-lg-1 col-lg-4 order-lg-2 order-1 d-flex align-items-center justify-content-center">

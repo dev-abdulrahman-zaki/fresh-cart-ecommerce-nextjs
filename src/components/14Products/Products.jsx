@@ -131,8 +131,10 @@ export default function Products() {
                     <Image
                       loading="lazy"
                       src={product.imageCover}
-                      className="w-100"
+                      className="w-100 img-fluid"
                       alt="product"
+                      width={300}
+                      height={300}
                     />
                     <small className="my-2 text-main">
                       {product.category.name}

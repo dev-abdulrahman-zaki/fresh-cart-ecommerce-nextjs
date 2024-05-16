@@ -131,8 +131,10 @@ export default function Orders() {
                               <div className="p-3 ">
                                 <Image
                                   src={item.product.imageCover}
-                                  className="w-100 mb-3"
+                                  className="w-100 mb-3 img-fluid"
                                   alt={item.product.title}
+                                  width={300}
+                                  height={300}
                                 />
                                 <h6 className="text-main fs-6">
                                   {item.product.category.name}

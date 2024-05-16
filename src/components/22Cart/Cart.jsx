@@ -109,8 +109,10 @@ export default function Cart() {
                         <Link href={`/productDetails/${product.product.id}`}>
                           <Image
                             src={product.product.imageCover}
-                            className="w-100"
+                            className="w-100 img-fluid"
                             alt=""
+                            width={300}
+                            height={300}
                           />
                         </Link>
                       </div>

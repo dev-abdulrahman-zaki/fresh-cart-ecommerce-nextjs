@@ -46,8 +46,10 @@ export default function ProductDetails({ id, data }) {
                     <Image
                       loading="lazy"
                       src={image}
-                      className="w-100"
+                      className="w-100 img-fluid"
                       alt={data.data.title}
+                      width={300}
+                      height={300}
                     />
                   </div>
                 );

@@ -1,3 +1,4 @@
+// "use client";
 import Cart from '@/components/22Cart/Cart';
 import ProtectedRoute from '@/components/ProtectedRoute/ProtectedRoute';
 import React from 'react'

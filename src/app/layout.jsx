@@ -17,7 +17,7 @@ import "./globals.css";
 // Import Dependencies
 import { QueryClient, QueryClientProvider } from "react-query";
 import { Toaster } from "react-hot-toast";
-// import { Offline } from "react-detect-offline";
+import { Offline } from "react-detect-offline";
 
 // Import Context (provider only)
 import AuthProvider from "../context/Authentication";
@@ -56,11 +56,11 @@ export default function RootLayout({ children }) {
             top: 58.5,
           }}
         />
-        {/* <Offline>
+        <Offline>
           <div className="offlineMsg bg-dark text-white p-3">
-            Oops! It seems like you're currently offline
+            Oops! It seems like you&apos;re currently offline
           </div>
-        </Offline> */}
+        </Offline>
       </body>
     </html>
   );

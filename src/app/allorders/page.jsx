@@ -1,3 +1,4 @@
+// "use client";
 import Orders from "@/components/24Orders/Orders";
 import ProtectedRoute from "@/components/ProtectedRoute/ProtectedRoute";
 import React from "react";

@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import Image from "next/image";
 
 export default function ProductDetails({ id, data }) {
   const { addProductToCart } = useContext(CartContext);
@@ -42,7 +43,7 @@ export default function ProductDetails({ id, data }) {
               {data.data.images.map((image, idx) => {
                 return (
                   <div className="item" key={idx}>
-                    <img
+                    <Image
                       loading="lazy"
                       src={image}
                       className="w-100"

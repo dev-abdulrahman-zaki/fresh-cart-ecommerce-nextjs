@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 import { ThreeCircles } from "react-loader-spinner";
 // import { Link } from "react-router-dom";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Orders() {
   const [userOrders, setUserOrders] = useState(null);
@@ -128,7 +129,7 @@ export default function Orders() {
                               title={item.product.title}
                             >
                               <div className="p-3 ">
-                                <img
+                                <Image
                                   src={item.product.imageCover}
                                   className="w-100 mb-3"
                                   alt={item.product.title}

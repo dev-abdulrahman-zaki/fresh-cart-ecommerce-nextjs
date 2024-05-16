@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import toast from "react-hot-toast";
+import Image from "next/image";
 
 export default function Products() {
   const [productsList, setProductsList] = useState([]);
@@ -53,7 +54,7 @@ export default function Products() {
 
   useEffect(() => {
     setListToDisplay(searchKeyword.length ? searchList : productsList);
-  }, [productsList, searchList]);
+  }, [productsList, searchList, searchKeyword]);
 
   async function handleAddToCart(productID) {
     if (localStorage.getItem("token") !== null) {
@@ -109,8 +110,9 @@ export default function Products() {
           />
           {searchKeyword.length > 0 && searchList.length > 0 && (
             <span className="d-inline-block text-end w-100 py-2">
-              {searchList.length} results for "
-              <span className="text-primary fw-semibold">{searchKeyword}</span>"
+              {searchList.length} results for &quot;
+              <span className="text-primary fw-semibold">{searchKeyword}</span>
+              &quot;
             </span>
           )}
         </div>
@@ -126,7 +128,7 @@ export default function Products() {
                     href={`/productDetails/${product.id}`}
                     title={product.title}
                   >
-                    <img
+                    <Image
                       loading="lazy"
                       src={product.imageCover}
                       className="w-100"

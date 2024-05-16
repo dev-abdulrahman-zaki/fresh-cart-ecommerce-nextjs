@@ -158,7 +158,7 @@ export default function SignIn() {
           </form>
         </div>
         <p className="text-center text-muted small">
-          Don't have an account?
+          Don&apos;t have an account?
           <Link href={`/signup`}>
             <span className="ms-1 text-main cursor-pointer">Sign up here!</span>
           </Link>

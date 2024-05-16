@@ -4,6 +4,7 @@ import { CartContext } from "../../context/CartContext";
 import { ThreeCircles } from "react-loader-spinner";
 import toast from "react-hot-toast";
 import Link from "next/link";
+import Image from "next/image";
 // import { Helmet } from "react-helmet";
 
 export default function Cart() {
@@ -106,7 +107,7 @@ export default function Cart() {
                     <div className="col-sm-3 col-md-2 col-lg-2 col-xl-1">
                       <div>
                         <Link href={`/productDetails/${product.product.id}`}>
-                          <img
+                          <Image
                             src={product.product.imageCover}
                             className="w-100"
                             alt=""

@@ -32,10 +32,6 @@ export default function ProductDetails({ id, data }) {
     }
   }
 
-  const customLoader = ({ src }) => {
-    return src;
-  };
-
   return (
     <div className="container py-5">
       <div className="row g-4 align-items-center">
@@ -46,8 +42,6 @@ export default function ProductDetails({ id, data }) {
                 return (
                   <div className="item" key={idx}>
                     <Image
-                      // loading="lazy"
-                      loader={customLoader}
                       src={image}
                       className="w-100 img-fluid"
                       alt={data.data.title}

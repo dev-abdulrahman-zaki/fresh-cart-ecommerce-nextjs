@@ -77,10 +77,6 @@ export default function SignUp() {
     },
   });
 
-  const customLoader = ({ src }) => {
-    return src;
-  };
-
   return (
     <>
       {/* <Helmet>
@@ -99,7 +95,6 @@ export default function SignUp() {
         <div className="row justify-content-center align-items-center">
           <div className="col-12 col-md-6 col-lg-4 order-lg-1 order-2 text-center">
             <Image
-              loader={customLoader}
               src="/imgs/signup.svg"
               alt=""
               className="img-fluid"

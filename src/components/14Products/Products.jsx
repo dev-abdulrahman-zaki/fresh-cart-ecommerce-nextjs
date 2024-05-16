@@ -96,6 +96,10 @@ export default function Products() {
     );
   }
 
+  const customLoader = ({ src }) => {
+    return src;
+  };
+
   return (
     <div className="container py-5">
       <div className="row g-4">
@@ -129,7 +133,8 @@ export default function Products() {
                     title={product.title}
                   >
                     <Image
-                      loading="lazy"
+                      loader={customLoader}
+                      // loading="lazy"
                       src={product.imageCover}
                       className="w-100 img-fluid"
                       alt="product"

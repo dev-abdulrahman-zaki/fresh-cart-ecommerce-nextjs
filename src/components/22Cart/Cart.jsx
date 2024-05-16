@@ -65,6 +65,10 @@ export default function Cart() {
     );
   }
 
+  const customLoader = ({ src }) => {
+    return src;
+  };
+
   return (
     <>
       {/* <Helmet>
@@ -108,6 +112,7 @@ export default function Cart() {
                       <div>
                         <Link href={`/productDetails/${product.product.id}`}>
                           <Image
+                            loader={customLoader}
                             src={product.product.imageCover}
                             className="w-100 img-fluid"
                             alt=""

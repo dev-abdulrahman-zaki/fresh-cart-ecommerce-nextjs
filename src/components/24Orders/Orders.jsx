@@ -103,6 +103,12 @@ export default function Orders() {
       </div>
     );
   }
+
+
+  const customLoader = ({ src }) => {
+    return src;
+  };
+
   return (
     <>
       {/* <Helmet>
@@ -130,6 +136,7 @@ export default function Orders() {
                             >
                               <div className="p-3 ">
                                 <Image
+                                  loader={customLoader}
                                   src={item.product.imageCover}
                                   className="w-100 mb-3 img-fluid"
                                   alt={item.product.title}
